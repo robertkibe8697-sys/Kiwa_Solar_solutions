@@ -14,6 +14,7 @@ body {
 
     body {
         font-size: 18px;
+         overflow-x: hidden;
     }
 
     h1 {
@@ -27,7 +28,31 @@ body {
     p {
         font-size: 1.1rem;
     }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Top bar */
