@@ -3,13 +3,17 @@
 <head>
     <title>Contact - Kiwa Energy</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
 <header>
     <nav>
-        <h2 class="logo">KIWA ENERGY</h2>
+         <div class="logo-container">
+    <img src="images/logo.png" alt="K&W Logo" class="logo">
+    <p class="logo-text">Kiwa Energy Solutions</p>
+</div>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -25,7 +29,7 @@
     <h1>Contact Us</h1>
 
     <p>📍 Nairobi, Kenya</p>
-    <p>📞 +254 XXX XXX</p>
+    <p>📞 +254 700 622889</p>
     <p>📧 info@kiwaenergy.com</p>
 
     <form>
@@ -57,6 +61,11 @@ document.querySelector("form").addEventListener("submit", async function(e) {
     alert(await res.text());
 });
 </script>
+<footer>
+    <p>📍 Nairobi, Kenya</p>
+    <p>📞 +254  700 622889</p>
+    <p>© 2026 Kiwa Energy Solutions</p>
+</footer>
 
 </body>
 </html>
