@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 
 <body>
 
@@ -21,6 +29,10 @@
     <img src="images/logo.png" alt="K&W Logo" class="logo">
     <p class="logo-text">Kiwa Energy Solutions</p>
 </div>
+<!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>

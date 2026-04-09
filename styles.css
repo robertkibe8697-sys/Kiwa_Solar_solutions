@@ -120,6 +120,54 @@ nav ul li a {
 nav ul li a:hover {
     color: #00d4ff;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2540;
+  padding: 15px 20px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    background: #0a2540;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when clicked */
+  }
+}
 
 
 
