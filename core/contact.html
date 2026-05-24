@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Kiwa Energy</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <nav>
+         <div class="logo-container">
+   <img src="{% static 'images/logo.png' %}" alt="K&W Logo" class="logo">
+    <p class="logo-text">Kiwa Energy Solutions</p>
+</div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page">
+    <h1>Contact Us</h1>
+
+    <p>📍 Nairobi, Kenya</p>
+    <p>📞 +254 700 622889</p>
+    <p>📧 info@kiwaenergy.com</p>
+
+<form id="contact-form" method="POST">
+    <p id="responseMessage"></p>
+
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+
+    <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+
+    <button type="submit" id="submitBtn">
+    <span id="btnText">Send Message</span>
+    <span id="spinner" style="display:none;" class="spinner"></span>
+</button>
+</form>
+
+</section>
+
+<footer>
+    <p>📍 Nairobi, Kenya</p>
+    <p>📞 +254  700 622889</p>
+    <p>© 2026 Kiwa Energy Solutions</p>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

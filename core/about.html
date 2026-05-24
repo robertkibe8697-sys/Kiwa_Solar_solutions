@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - Kiwa Energy</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <nav>
+         <div class="logo-container">
+    <img src="{% static 'images/logo.png' %}" alt="K&W Logo" class="logo">
+    <p class="logo-text">Kiwa Energy Solutions</p>
+</div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about-section">
+    <div class="about-text">
+    <h1>About Us</h1>
+    <p>
+        At Kiwa Energy Solutions, we are committed to delivering reliable, affordable,
+         and sustainable energy solutions to homes and businesses across Kenya.
+    </p>
+
+    <p>
+        Our mission is to promote clean and affordable energy while helping homes 
+        and businesses reduce their carbon footprint.
+    </p>
+</section>
+
+<section class="ceo-section">
+    <div class="ceo-container">
+
+        <div class="ceo-image">
+            <img src="{% static 'images/ceo.jpeg' %}" alt="CEO">
+        </div>
+
+        <div class="ceo-text">
+            <h2>Meet Our CEO</h2>
+            <h3>Anthony</h3>
+            <p>
+                Anthony Kibe is the founder and CEO of Kiwa Energy Solutions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>📍 Nairobi, Kenya</p>
+    <p>📞 +254  700 622889</p>
+    <p>© 2026 Kiwa Energy Solutions</p>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

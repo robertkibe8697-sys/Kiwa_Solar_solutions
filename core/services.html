@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services - Kiwa Energy</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <nav>
+         <div class="logo-container">
+    <img src="{% static 'images/logo.png' %}" alt="K&W Logo" class="logo">
+    <p class="logo-text">Kiwa Energy Solutions</p>
+</div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="services">
+    <h1>Our Services</h1>
+
+    <div class="service-box">
+        <div class="card">
+            <h3>Solar Installation</h3>
+            <img src="{% static 'images/solar installation.jpg' %}" alt="">
+        </div>
+
+        <div class="card">
+            <h3>Electrical Systems</h3>
+            <img src="{% static 'images/electrical systems.jpg' %}" alt="">
+        </div>
+
+        <div class="card">
+            <h3>Automation</h3>
+            <img src="{% static 'images/automation.jpg' %}" alt="">
+        </div>
+
+        <div class="card">
+            <h3>CCTV & Security</h3>
+            <img src="{% static 'images/security.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>📍 Nairobi, Kenya</p>
+    <p>📞 +254  700 622889</p>
+    <p>© 2026 Kiwa Energy Solutions</p>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
