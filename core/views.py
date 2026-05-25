@@ -22,6 +22,11 @@ def home(request):
         'projects': projects,
     })
 
+# =========================
+# CONTACT PAGE (ADD THIS)
+# =========================
+def contact_page(request):
+    return render(request, 'contact.html')
 
 # =========================
 # CONTACT API
