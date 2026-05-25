@@ -22,11 +22,44 @@ def home(request):
         'projects': projects,
     })
 
+
 # =========================
-# CONTACT PAGE (ADD THIS)
+# ABOUT PAGE
+# =========================
+def about(request):
+    return render(request, 'about.html')
+
+
+# =========================
+# SERVICES PAGE
+# =========================
+def services(request):
+
+    services = Service.objects.all()
+
+    return render(request, 'services.html', {
+        'services': services,
+    })
+
+
+# =========================
+# PROJECTS PAGE
+# =========================
+def projects(request):
+
+    projects = Project.objects.all()
+
+    return render(request, 'projects.html', {
+        'projects': projects,
+    })
+
+
+# =========================
+# CONTACT PAGE
 # =========================
 def contact_page(request):
     return render(request, 'contact.html')
+
 
 # =========================
 # CONTACT API
