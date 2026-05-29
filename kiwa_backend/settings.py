@@ -9,9 +9,8 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
-import os
-from pathlib import Path
 
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('django-insecure-bp-q^x^y17gwpe%gvuv844e&4##m83-)_w#n&1$0-+-^-fkvdh')
+SECRET_KEY = 'django-insecure-bp-q^x^y17gwpe%gvuv844e&4##m83-)_w#n&1$0-+-^-fkvdh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -95,8 +94,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = os.getenv('kiwagreenergy@gmail.com')
-EMAIL_HOST_PASSWORD = os.getenv('roiq hkff eqhk eyif')
+EMAIL_HOST_USER = 'kiwagreenergy@gmail.com'
+EMAIL_HOST_PASSWORD = 'roiq hkff eqhk eyif'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
