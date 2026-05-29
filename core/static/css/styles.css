@@ -428,11 +428,11 @@ form button {
     margin-top: 10px;
 }
 
-* Project Boxes */
+/* Project Boxes */
 .project-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 20px;
     margin-top: 50px;
 }
 
