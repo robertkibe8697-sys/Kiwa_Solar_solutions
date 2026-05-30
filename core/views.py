@@ -114,14 +114,6 @@ def contact(request):
                 #fail_silently=False,
             #)
 
-            send_mail(
-    subject="SMTP Test",
-    message="Testing Render SMTP",
-    from_email="kiwagreenergy@gmail.com",
-    recipient_list=["kiwagreenergy@gmail.com"],
-    fail_silently=False,
-)
-
             return JsonResponse({
                 "message": "Message sent successfully"
             })
