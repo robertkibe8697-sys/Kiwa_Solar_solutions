@@ -87,32 +87,32 @@ def contact(request):
             )
 
             # Email to user
-            #send_mail(
-             #   subject="Thank You for Contacting Kiwa Energy Solutions",
-              #  message=(
-               #     f"Hello {name},\n\n"
-                #    "Thank you for contacting Kiwa Energy Solutions.\n"
-                 #   "We have received your message and will respond shortly.\n\n"
-                  #  "Best regards,\n"
-                   # "Kiwa Energy Team"
-                #),
-                #from_email="kiwagreenergy@gmail.com",
-                #recipient_list=[email],
-                #fail_silently=False,
-            #)
+            send_mail(
+                subject="Thank You for Contacting Kiwa Energy Solutions",
+                message=(
+                    f"Hello {name},\n\n"
+                    "Thank you for contacting Kiwa Energy Solutions.\n"
+                    "We have received your message and will respond shortly.\n\n"
+                    "Best regards,\n"
+                    "Kiwa Energy Team"
+                ),
+                from_email="kiwagreenergy@gmail.com",
+                recipient_list=[email],
+                fail_silently=False,
+            )
 
             # Email to business owner
-            #send_mail(
-             #   subject=f"New Inquiry from {name}",
-              #  message=(
-               #     f"Name: {name}\n"
-                #    f"Email: {email}\n\n"
-                 #   f"Message:\n{message}"
-                #),
-                #from_email="kiwagreenergy@gmail.com",
-                #recipient_list=["kiwagreenergy@gmail.com"],
-                #fail_silently=False,
-            #)
+            send_mail(
+                subject=f"New Inquiry from {name}",
+                message=(
+                    f"Name: {name}\n"
+                    f"Email: {email}\n\n"
+                    f"Message:\n{message}"
+                ),
+                from_email="kiwagreenergy@gmail.com",
+                recipient_list=["kiwagreenergy@gmail.com"],
+                fail_silently=False,
+            )
 
             return JsonResponse({
                 "message": "Message sent successfully"
