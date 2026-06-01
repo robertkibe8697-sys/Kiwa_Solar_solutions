@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render
 import json
 
-from .models import Contact, HomePage, Service, Project
+from .models import Contact, HomePage, Service, Project, AboutPage
 
 
 # =========================
@@ -26,7 +26,6 @@ def home(request):
 # =========================
 # ABOUT PAGE
 # =========================
-from .models import AboutPage
 
 def about(request):
     about = AboutPage.objects.first()

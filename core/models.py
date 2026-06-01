@@ -45,23 +45,8 @@ class AboutPage(models.Model):
 
     introduction = models.TextField()
 
-    mission = models.TextField()
-
-    vision = models.TextField()
-
-    impact = models.TextField()
-
-    why_choose_us = models.TextField(
-        help_text="One reason per line"
-    )
-
-    process = models.TextField(
-        help_text="One step per line"
-    )
-
-    ceo_name = models.CharField(max_length=100)
-
-    ceo_bio = models.TextField()
+   
+   
 
     ceo_image = models.ImageField(
         upload_to="about/",
