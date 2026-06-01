@@ -12,3 +12,8 @@ from .models import HomePage, Project
 
 admin.site.register(HomePage)
 admin.site.register(Project)
+
+from django.contrib import admin
+from .models import  AboutPage
+
+admin.site.register(AboutPage)

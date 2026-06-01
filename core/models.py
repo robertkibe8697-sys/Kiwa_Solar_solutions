@@ -37,3 +37,37 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+    
+    from django.db import models
+
+class AboutPage(models.Model):
+    heading = models.CharField(max_length=200, default="About Us")
+
+    introduction = models.TextField()
+
+    mission = models.TextField()
+
+    vision = models.TextField()
+
+    impact = models.TextField()
+
+    why_choose_us = models.TextField(
+        help_text="One reason per line"
+    )
+
+    process = models.TextField(
+        help_text="One step per line"
+    )
+
+    ceo_name = models.CharField(max_length=100)
+
+    ceo_bio = models.TextField()
+
+    ceo_image = models.ImageField(
+        upload_to="about/",
+        blank=True,
+        null=True
+    )
+
+    def __str__(self):
+        return self.heading

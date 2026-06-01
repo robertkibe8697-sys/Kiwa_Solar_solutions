@@ -26,9 +26,14 @@ def home(request):
 # =========================
 # ABOUT PAGE
 # =========================
-def about(request):
-    return render(request, 'about.html')
+from .models import AboutPage
 
+def about(request):
+    about = AboutPage.objects.first()
+
+    return render(request, "about.html", {
+        "about": about
+    })
 
 # =========================
 # SERVICES PAGE
