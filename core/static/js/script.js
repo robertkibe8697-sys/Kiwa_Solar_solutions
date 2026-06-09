@@ -3,14 +3,35 @@ document.addEventListener("DOMContentLoaded", () => {
     // =========================
     // HAMBURGER MENU
     // =========================
-    const hamburger = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("navLinks");
+  const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    }
+   if (menuToggle && navLinks) {
+
+    menuToggle.addEventListener("click", function(e){
+        e.stopPropagation();
+        navLinks.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function(){
+        navLinks.classList.remove("active");
+    });
+
+    window.addEventListener("scroll", function(){
+        navLinks.classList.remove("active");
+    });
+}
+     const whatsappBtn = document.querySelector(".whatsapp-float");
+
+    whatsappBtn.style.opacity = "0";
+    whatsappBtn.style.transform = "translateY(50px)";
+
+    setTimeout(() => {
+        whatsappBtn.style.transition = "all 0.5s ease";
+        whatsappBtn.style.opacity = "1";
+        whatsappBtn.style.transform = "translateY(0)";
+    }, 500);
+
 
     // =========================
     // CONTACT FORM
