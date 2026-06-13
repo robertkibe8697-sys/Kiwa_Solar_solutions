@@ -90,20 +90,20 @@ def contact(request):
                 message=message
             )
 
-            # Email to user
-            #send_mail(
-             #   subject="Thank You for Contacting Kiwa Energy Solutions",
-              #  message=(
-               #     f"Hello {name},\n\n"
-                #    "Thank you for contacting Kiwa Energy Solutions.\n"
-                 #   "We have received your message and will respond shortly.\n\n"
-                  #  "Best regards,\n"
-                   # "Kiwa Energy Team"
-                #),
-                #from_email="kiwagreenergy@gmail.com",
-                #recipient_list=[email],
-                #fail_silently=False,
-            #)
+             #Email to user
+            send_mail(
+                subject="Thank You for Contacting Kiwa Energy Solutions",
+                message=(
+                    f"Hello {name},\n\n"
+                    "Thank you for contacting Kiwa Energy Solutions.\n"
+                    "We have received your message and will respond shortly.\n\n"
+                    "Best regards,\n"
+                    "Kiwa Energy Team"
+                ),
+                from_email="kiwagreenergy@gmail.com",
+                recipient_list=[email],
+                fail_silently=False,
+            )
 
             # Email to business owner
             #send_mail(
